@@ -1,0 +1,9 @@
+<br>
+<ul>
+    <li class="list-group-item">
+        Search: <input ng-model="$ctrl.query">
+    </li>
+    <li class="list-group-item" ng-repeat="phone in $ctrl.phones | filter:$ctrl.query">
+        {{phone.name}}
+    </li>
+</ul>
